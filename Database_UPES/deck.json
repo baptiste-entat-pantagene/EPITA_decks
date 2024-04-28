@@ -1,0 +1,674 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "b50ea9bb-0518-11ef-8093-48e7da5b66fc",
+    "deck_config_uuid": "b50ea9bc-0518-11ef-9a68-48e7da5b66fc",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "b50ea9bc-0518-11ef-9a68-48e7da5b66fc",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    1.0,
+                    10.0,
+                    60.0,
+                    120.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 2,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": true,
+                "delays": [
+                    1.0,
+                    10.0,
+                    60.0
+                ],
+                "initialFactor": 1500,
+                "ints": [
+                    2,
+                    2,
+                    0
+                ],
+                "order": 1,
+                "perDay": 5,
+                "separate": true
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "reminder": {
+                "enabled": false,
+                "time": [
+                    0,
+                    0
+                ]
+            },
+            "replayq": true,
+            "rescheduleFsrsCards": false,
+            "rev": {
+                "bury": false,
+                "ease4": 1.0,
+                "fuzz": 0.05,
+                "hardFactor": 0.5,
+                "ivlFct": 0.6,
+                "maxIvl": 100,
+                "minSpace": 1,
+                "perDay": 50
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [],
+    "name": "Database_UPES",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "b50f4e6f-0518-11ef-b1b2-48e7da5b66fc",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": null,
+                    "media": [],
+                    "name": "Recto",
+                    "ord": 0,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": null,
+                    "media": [],
+                    "name": "Verso",
+                    "ord": 1,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": null,
+                    "media": [],
+                    "name": "Ajouter un envers",
+                    "ord": 2,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basique (envers facultatif)",
+            "originalId": 1630509423014,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        1,
+                        2
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Verso}}",
+                    "bafmt": "",
+                    "bfont": "Arial",
+                    "bqfmt": "",
+                    "bsize": 12,
+                    "did": null,
+                    "id": null,
+                    "name": "Carte 1",
+                    "ord": 0,
+                    "qfmt": "{{Recto}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Recto}}",
+                    "bafmt": "",
+                    "bfont": "Arial",
+                    "bqfmt": "",
+                    "bsize": 12,
+                    "did": null,
+                    "id": null,
+                    "name": "Carte 2",
+                    "ord": 1,
+                    "qfmt": "{{#Ajouter un envers}}{{Verso}}{{/Ajouter un envers}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": null,
+                    "name": "Recto",
+                    "ord": 0,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": null,
+                    "name": "Verso",
+                    "ord": 1,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basique",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Verso}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "id": null,
+                    "name": "Carte 1",
+                    "ord": 0,
+                    "qfmt": "{{Recto}}"
+                }
+            ],
+            "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": 7235898995030299768,
+                    "name": "Recto",
+                    "ord": 0,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": -7197369682380795084,
+                    "name": "Verso",
+                    "ord": 1,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": -6947520605342234380,
+                    "name": "Recto_alternatif",
+                    "ord": 2,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": -6450255135669424673,
+                    "name": "Verso_alternatif",
+                    "ord": 3,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic_double",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ],
+                [
+                    1,
+                    "any",
+                    [
+                        2
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Verso}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "id": 4966674251101295027,
+                    "name": "Carte 1",
+                    "ord": 0,
+                    "qfmt": "{{Recto}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Verso_alternatif}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "id": 802822922291648855,
+                    "name": "Carte 2",
+                    "ord": 1,
+                    "qfmt": "{{Recto_alternatif}}"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a Domain ?",
+                "Consist of Names, Data Type, Format and set of Atomic Values.",
+                ""
+            ],
+            "guid": "yRuf`!?l[K",
+            "note_model_uuid": "b50f4e6f-0518-11ef-b1b2-48e7da5b66fc",
+            "tags": [
+                "Terminologie"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Types of Constraints",
+                "NOT NULL<br>UNIQUE<br>DEFAULT<br>CHECK<br>PRIMARY KEY<br>FOREIGN KEY"
+            ],
+            "guid": "Hc]UzY#!ST",
+            "note_model_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "tags": [
+                "SQL_Constraint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The&nbsp;information rule [Codd's Rule]",
+                "All information in a relational data base is represented explicitly at the logical level and in exactly one way&nbsp;– by values in tables.",
+                "Rule that say : All information in a relational data base is represented explicitly at the logical level and in exactly one way.",
+                "The&nbsp;information rule [Codd's Rule]"
+            ],
+            "guid": "dTjH%ZsGn#",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The&nbsp;<i>guaranteed access rule [Codd's]</i>",
+                "Each and every datum (atomic value) in a relational data base is guaranteed to be logically accessible by resorting to a combination of table name, primary key value and column name.",
+                "Name of this rule ?<br>Each and every datum (atomic value) in a relational data base is guaranteed to be logically accessible by resorting to a combination of table name, primary key value and column name.",
+                "The&nbsp;<i>guaranteed access rule [Codd's]</i>"
+            ],
+            "guid": "ff6fg_CCDV",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<i>Systematic treatment of null values [Codd's]</i>",
+                "Null values (distinct from the empty character string or a string of blank characters and distinct from zero or any other number) are supported in fully relational DBMS for representing missing information and inapplicable information in a systematic way, independent of data type.",
+                "Name of this rule :<br>Null values (distinct from the empty character string or a string of blank characters and distinct from zero or any other number) are supported in fully relational DBMS for representing missing information and inapplicable information in a systematic way, independent of data type.",
+                "<i>Systematic treatment of null values [Codd's]</i>"
+            ],
+            "guid": "E4P;H#LR.!",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Dynamic&nbsp;online&nbsp;catalog&nbsp;based on the relational model [Codd's]",
+                "The data base description is represented at the logical level in the same way as ordinary data, so that authorized users can apply the same relational language to its interrogation as they apply to the regular data.",
+                "Name of this rule :<br>The data base description is represented at the logical level in the same way as ordinary data, so that authorized users can apply the same relational language to its interrogation as they apply to the regular data.",
+                "Dynamic&nbsp;online&nbsp;catalog&nbsp;based on the relational model [Codd's]"
+            ],
+            "guid": "h5D|(Mr|v(",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The&nbsp;<i>comprehensive data sublanguage rule [Codd's]</i>",
+                "A database can only be accessed using a language having linear syntax that supports data definition, data manipulation, and transaction management operations.",
+                "Name of this rule :<br>A database can only be accessed using a language having linear syntax that supports data definition, data manipulation, and transaction management operations.",
+                "The&nbsp;<i>comprehensive data sublanguage rule [Codd's]</i>"
+            ],
+            "guid": "xb$<Rej/o@",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Physical data independence [Codd's]",
+                "Application programs and terminal activities remain logically unimpaired whenever any changes are made in either storage representations or access methods.",
+                "Name of this rule:<br>Application programs and terminal activities remain logically unimpaired whenever any changes are made in either storage representations or access methods.",
+                "Physical data independence [Codd's]"
+            ],
+            "guid": "B;ASjG%Pq-",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Logical data independence [Codd's]",
+                "Application programs and terminal activities remain logically unimpaired when information-preserving changes of any kind that theoretically permit unimpairment are made to the base tables.",
+                "Name of this rule :<br>Application programs and terminal activities remain logically unimpaired when information-preserving changes of any kind that theoretically permit unimpairment are made to the base tables.",
+                "Logical data independence [Codd's]"
+            ],
+            "guid": "cR}=H#02w|",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Integrity independence [Codd's]",
+                "Integrity constraints specific to a particular relational data base must be definable in the relational data sublanguage and storable in the catalog, not in the application programs.",
+                "Name of this rule:<br>Integrity constraints specific to a particular relational data base must be definable in the relational data sublanguage and storable in the catalog, not in the application programs.",
+                "Integrity independence [Codd's]"
+            ],
+            "guid": "lD>W`~YQlg",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Distribution independence [Codd's]",
+                "The end-user must not be able to see that the data is distributed over various locations. Users should always get the impression that the data is located at one site only.",
+                "Name of this rule :<br>The end-user must not be able to see that the data is distributed over various locations. Users should always get the impression that the data is located at one site only.",
+                "Distribution independence [Codd's]"
+            ],
+            "guid": "hnX8Puc^kp",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The&nbsp;nonsubversion rule [Codd's]",
+                "If a relational system has a low-level (single-record-at-a-time) language, that low level cannot be used to subvert or bypass the integrity rules and constraints expressed in the higher level relational language (multiple-records-at-a-time).",
+                "Name of this rule :<br>If a relational system has a low-level (single-record-at-a-time) language, that low level cannot be used to subvert or bypass the integrity rules and constraints expressed in the higher level relational language (multiple-records-at-a-time).",
+                "The&nbsp;nonsubversion rule [Codd's]"
+            ],
+            "guid": "uim.e@F2UN",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The&nbsp;view&nbsp;updating rule [Codd's]",
+                "All views that are theoretically updatable are also updatable by the system.",
+                "Name of this rule :<br>All views that are theoretically updatable are also updatable by the system.",
+                "The&nbsp;view&nbsp;updating rule [Codd's]"
+            ],
+            "guid": "QK=gGIs`IM",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Relational Operations Rule [Codd's]",
+                "The capability of handling a base relation or a derived relation as a single operand applies not only to the retrieval of data but also to the insertion, update and deletion of data.",
+                "Name of this rule :<br>The capability of handling a base relation or a derived relation as a single operand applies not only to the retrieval of data but also to the insertion, update and deletion of data.",
+                "Relational Operations Rule [Codd's]"
+            ],
+            "guid": "B$0DS`r3H!",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": [
+                "Codd's::Rule"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Characteristic&nbsp;of the DB approach ?",
+                "- Built for a <b>specific</b> purpose<br>- Logical and Coherent collection of data<br>- Respresent some aspect of the real world",
+                "It's a DB or a DBMS ?<br>If it's built for a&nbsp;<b>specific</b>&nbsp;purpose",
+                "It's a DB"
+            ],
+            "guid": "Bcy@d~e-1!",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the&nbsp;NOT NULL constraint",
+                "The NOT NULL constraint is&nbsp;used to ensure that a given column of a table is never assigned the null value."
+            ],
+            "guid": "u+]#I@;}s3",
+            "note_model_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "tags": [
+                "SQL_Constraint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the&nbsp;UNIQUE constraint ?",
+                "The&nbsp;UNIQUE constraint&nbsp;ensures that all values in a column are different."
+            ],
+            "guid": "Js,mE9zcjy",
+            "note_model_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "tags": [
+                "SQL_Constraint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the&nbsp;DEFAULT constraint",
+                "The DEFAULT Constraint is&nbsp;used to fill a column with a default and fixed value."
+            ],
+            "guid": "I<t+Ujg)d;",
+            "note_model_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "tags": [
+                "SQL_Constraint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the&nbsp;CHECK constraint",
+                "Check Constraint&nbsp;is used to specify a predicate that every tuple must satisfy in a given relation."
+            ],
+            "guid": "f~],B.}hL0",
+            "note_model_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "tags": [
+                "SQL_Constraint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the&nbsp;PRIMARY KEY constraint",
+                "The PRIMARY KEY constraint&nbsp;specifies that the constrained columns' values must uniquely identify each row."
+            ],
+            "guid": "wW=H=CHi>e",
+            "note_model_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "tags": [
+                "SQL_Constraint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the&nbsp;FOREIGN KEY constraint",
+                "The FOREIGN KEY constraint&nbsp;specifies a column can contain only values exactly matching existing values from the column it references."
+            ],
+            "guid": "c8?]MHE26m",
+            "note_model_uuid": "b50f4e72-0518-11ef-88d5-48e7da5b66fc",
+            "tags": [
+                "SQL_Constraint"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Characteristic of the DBMS approach ?",
+                "A database management system (DBMS) is a collection of programs that allow you to create, manage, and operate a database.",
+                "It's a DB or a DBMS ?<br>- For general usage",
+                "It's a DBMS !"
+            ],
+            "guid": "w(|p*A,+W<",
+            "note_model_uuid": "b50f4e75-0518-11ef-9edb-48e7da5b66fc",
+            "tags": []
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
